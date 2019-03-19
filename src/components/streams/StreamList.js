@@ -48,7 +48,9 @@ renderList(){
       return (
       	<div className="card">
       	 <div className="card-body">
-        <h5  className="card-title"> {stream.title}  </h5 > 
+        <h5  className="card-title"> 
+        <Link to={`/streams/show/${stream.id}`}>{stream.title} </Link>
+         </h5 > 
         <p className="card-text"> {stream.description}  </p>
         {this.renderAdmin(stream)}
         </div>  

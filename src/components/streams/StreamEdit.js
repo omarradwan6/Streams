@@ -19,7 +19,7 @@ render(){
 	return (
 		<div>
 		<h3>Edit the stream</h3>
-		<StreamForm onSubmit={this.onSubmit} initialValues={{title:this.props.stream.title,description:this.props.stream.description}}/>
+		<StreamForm onSubmit={this.onSubmit} initialValues={{title:this.props.stream.title,GiftDescription1:this.props.stream.GiftDescription1}}/>
 		</div>
 		)
 }
